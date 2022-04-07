@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+body {
+  margin: 0;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.5s;
+  font-family: "Ubuntu", sans-serif;
+}
+/* .container-dark-mode will run when the dark mode is active */
+.container-dark-mode {
+  background-color: #181a1b;
+  color: #ffffff;
+}
+#toggleDayOrNight {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 64px;
+  align-items: flex-end;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.dayBackground {
+  background-image: url("https://img.icons8.com/dusk/64/000000/new-moon.png");
+  background-color: black;
+}
+
+.nightBackground {
+  background-image: url("https://img.icons8.com/dusk/64/000000/summer.png");
+  background-color: white;
+}
+
+/* .content is default style of div.content */
+.content {
+  width: 25%;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #ecf0f1;
+  box-shadow: 4px 4px 30px #bdc3c7;
+}
+/* .content-dark-mode will run when the dark mode is active */
+.content-dark-mode {
+  background-color: #2b2e30;
+  box-shadow: 4px 4px 25px #202324;
+}
+/* Go To Website's button that displayed in footer of .content */
+.btn {
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #2185d0;
+  text-decoration: none;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #1767d0;
+}
+/* .btn-dark-mode-mode will run when the dark mode is active */
+.btn-dark-mode {
+  background-color: #19659e;
+}
+.btn-dark-mode:hover {
+  background-color: #1354aa;
+}
+@media only screen and (max-width: 700px) {
+  .content {
+    width: 60%;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .content {
+    width: 60%;
+  }
+}
